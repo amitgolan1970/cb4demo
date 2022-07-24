@@ -1,7 +1,9 @@
-import org.openqa.selenium.By;
+package tests;
+
 import org.testng.annotations.Test;
 import pages.cb4.Cb4LoginPage;
 import pages.cb4.Cb4MainPage;
+import selenium_setup.SeleniumSetup;
 
 public class testCB4 extends SeleniumSetup {
 
@@ -23,5 +25,4 @@ public class testCB4 extends SeleniumSetup {
         Cb4LoginPage cb4LoginPage = new Cb4LoginPage(driver);
         cb4LoginPage.fillFormAndClickWatch("1", "2", "3");
     }
-
 }
